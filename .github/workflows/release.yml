@@ -26,7 +26,7 @@ jobs:
 
       - name: Generate CI keystore
         run: |
-          keytool -genkey -v -keystore android/app/ci-keystore.jks \
+          keytool -genkey -v -keystore "$GITHUB_WORKSPACE/android/app/ci-keystore.jks" \
             -alias ci -keyalg RSA -keysize 2048 -validity 36500 \
             -storepass ci_pass -keypass ci_pass \
             -dname "CN=CI, OU=CI, O=CI, L=CI, S=CI, C=CI"
@@ -34,7 +34,7 @@ jobs:
       - name: Build release APK
         run: flutter build apk --release
         env:
-          KEYSTORE_PATH: android/app/ci-keystore.jks
+          KEYSTORE_PATH: ${{ github.workspace }}/android/app/ci-keystore.jks
           KEYSTORE_PASSWORD: ci_pass
           KEY_ALIAS: ci
           KEY_PASSWORD: ci_pass
