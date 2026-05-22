@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:url_launcher/url_launcher.dart';
+import '../../services/url_launcher_service.dart';
 import '../../core/localization/app_localizations.dart';
 import '../../models/saved_recipe.dart';
 import '../../providers/recipe_provider.dart';
@@ -177,10 +177,7 @@ class _RecipeDetailScreenState extends ConsumerState<RecipeDetailScreen> {
   }
 
   Future<void> _launchUrl(String url) async {
-    final uri = Uri.parse(url);
-    if (await canLaunchUrl(uri)) {
-      await launchUrl(uri);
-    }
+    await UrlLauncherService.launch(url, external: true);
   }
 
   Future<void> _toggleSave(BuildContext context, WidgetRef ref, AsyncValue recipeAsync, bool isSaved) async {

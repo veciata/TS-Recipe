@@ -11,7 +11,7 @@ class TranslationService {
     );
     try {
       final manager = OnDeviceTranslatorModelManager();
-      await manager.downloadModel('en-tr', isWifiRequired: false);
+      await manager.downloadModel('en_tr', isWifiRequired: false);
     } catch (_) {}
   }
 

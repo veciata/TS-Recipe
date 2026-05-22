@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:url_launcher/url_launcher.dart';
+import '../../services/url_launcher_service.dart';
 import '../../core/localization/app_localizations.dart';
 import '../../models/saved_recipe.dart';
 import '../../models/search_result.dart';
@@ -118,10 +118,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
   }
 
   Future<void> _openUrl(String url) async {
-    final uri = Uri.tryParse(url);
-    if (uri != null && await canLaunchUrl(uri)) {
-      await launchUrl(uri, mode: LaunchMode.externalApplication);
-    }
+    await UrlLauncherService.launch(url, external: true);
   }
 }
 
