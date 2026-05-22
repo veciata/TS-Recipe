@@ -16,9 +16,10 @@ jobs:
           distribution: temurin
           java-version: 21
 
-      - uses: subosito/flutter-action@v3
+      - uses: subosito/flutter-action@v2
         with:
-          channel: stable
+          flutter-version: '3.44.0'
+          channel: 'stable'
 
       - name: Install dependencies
         run: flutter pub get
