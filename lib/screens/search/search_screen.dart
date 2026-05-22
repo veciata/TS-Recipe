@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../services/url_launcher_service.dart';
+import 'package:go_router/go_router.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import '../../core/localization/app_localizations.dart';
+import '../../models/recipe.dart';
 import '../../models/saved_recipe.dart';
-import '../../models/search_result.dart';
 import '../../providers/recipe_provider.dart';
 import '../../providers/saved_provider.dart';
 
@@ -27,7 +28,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     final query = _searchController.text.trim();
-    final resultsAsync = query.isNotEmpty ? ref.watch(duckDuckGoSearchProvider(query)) : null;
+    final resultsAsync = query.isNotEmpty ? ref.watch(searchResultsProvider(query)) : null;
     final savedRecipes = ref.watch(savedRecipesProvider);
 
     return Scaffold(
@@ -87,13 +88,13 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                         padding: const EdgeInsets.all(12),
                         itemCount: results.length,
                         itemBuilder: (context, index) {
-                          final result = results[index];
-                          final isSaved = savedRecipes.any((r) => r.id == result.url);
-                          return _SearchResultCard(
-                            result: result,
+                          final recipe = results[index];
+                          final isSaved = savedRecipes.any((r) => r.id == recipe.id);
+                          return _SearchRecipeCard(
+                            recipe: recipe,
                             isSaved: isSaved,
-                            onSave: () => _saveResult(result),
-                            onTap: () => _openUrl(result.url),
+                            onSave: () => _saveRecipe(recipe),
+                            onTap: () => context.push('/recipe', extra: recipe.id),
                           );
                         },
                       );
@@ -105,31 +106,27 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
     );
   }
 
-  Future<void> _saveResult(SearchResult result) async {
+  Future<void> _saveRecipe(Recipe recipe) async {
     final categories = ref.read(savedCategoriesProvider);
     final targetId = categories.isNotEmpty ? categories.first.id : 'uncategorized';
-    final saved = SavedRecipe.fromSearchResult(result, targetId);
+    final saved = SavedRecipe.fromRecipe(recipe, targetId);
     ref.read(savedRecipesProvider.notifier).save(saved);
     if (mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('"${result.title}" kaydedildi')),
+        SnackBar(content: Text('"${recipe.name}" kaydedildi')),
       );
     }
   }
-
-  Future<void> _openUrl(String url) async {
-    await UrlLauncherService.launch(url, external: true);
-  }
 }
 
-class _SearchResultCard extends StatelessWidget {
-  final SearchResult result;
+class _SearchRecipeCard extends StatelessWidget {
+  final Recipe recipe;
   final bool isSaved;
   final VoidCallback onSave;
   final VoidCallback onTap;
 
-  const _SearchResultCard({
-    required this.result,
+  const _SearchRecipeCard({
+    required this.recipe,
     required this.isSaved,
     required this.onSave,
     required this.onTap,
@@ -137,6 +134,7 @@ class _SearchResultCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     return Card(
       margin: const EdgeInsets.only(bottom: 8),
       clipBehavior: Clip.antiAlias,
@@ -147,58 +145,57 @@ class _SearchResultCard extends StatelessWidget {
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              if (result.imageUrl != null && result.imageUrl!.isNotEmpty)
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(8),
-                  child: Image.network(
-                    result.imageUrl!,
-                    width: 72,
-                    height: 72,
-                    fit: BoxFit.cover,
-                    errorBuilder: (_, _, _) => Container(
-                      width: 72,
-                      height: 72,
-                      color: Colors.grey[200],
-                      child: Icon(Icons.restaurant, color: Colors.grey[400]),
-                    ),
-                  ),
-                )
-              else
-                Container(
-                  width: 72,
-                  height: 72,
-                  decoration: BoxDecoration(
+              ClipRRect(
+                borderRadius: BorderRadius.circular(8),
+                child: CachedNetworkImage(
+                  imageUrl: recipe.imageUrl,
+                  width: 80,
+                  height: 80,
+                  fit: BoxFit.cover,
+                  placeholder: (_, _) => Container(
+                    width: 80, height: 80,
                     color: Colors.grey[200],
-                    borderRadius: BorderRadius.circular(8),
+                    child: const Center(child: CircularProgressIndicator(strokeWidth: 2)),
                   ),
-                  child: Icon(Icons.restaurant, color: Colors.grey[400]),
+                  errorWidget: (_, _, _) => Container(
+                    width: 80, height: 80,
+                    color: Colors.grey[200],
+                    child: Icon(Icons.restaurant, color: Colors.grey[400]),
+                  ),
                 ),
+              ),
               const SizedBox(width: 12),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      result.title,
+                      recipe.name,
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                       style: Theme.of(context).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w600),
                     ),
-                    if (result.snippet.isNotEmpty) ...[
-                      const SizedBox(height: 4),
-                      Text(
-                        result.snippet,
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                        style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.grey[600]),
-                      ),
-                    ],
                     const SizedBox(height: 4),
-                    Text(
-                      result.url,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.grey, fontSize: 10),
+                    Row(
+                      children: [
+                        if (recipe.area.isNotEmpty) ...[
+                          Icon(Icons.flag, size: 14, color: Colors.grey[500]),
+                          const SizedBox(width: 4),
+                          Text(
+                            l10n.translateArea(recipe.area),
+                            style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.grey[600]),
+                          ),
+                          const SizedBox(width: 12),
+                        ],
+                        if (recipe.category.isNotEmpty) ...[
+                          Icon(Icons.category, size: 14, color: Colors.grey[500]),
+                          const SizedBox(width: 4),
+                          Text(
+                            l10n.translateCategory(recipe.category),
+                            style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.grey[600]),
+                          ),
+                        ],
+                      ],
                     ),
                   ],
                 ),
