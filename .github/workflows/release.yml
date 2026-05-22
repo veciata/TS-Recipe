@@ -1,0 +1,48 @@
+name: Build & Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: stable
+          channel: stable
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Generate CI keystore
+        run: |
+          keytool -genkey -v -keystore android/app/ci-keystore.jks \
+            -alias ci -keyalg RSA -keysize 2048 -validity 36500 \
+            -storepass ci_pass -keypass ci_pass \
+            -dname "CN=CI, OU=CI, O=CI, L=CI, S=CI, C=CI"
+
+      - name: Build release APK
+        run: flutter build apk --release
+        env:
+          KEYSTORE_PATH: android/app/ci-keystore.jks
+          KEYSTORE_PASSWORD: ci_pass
+          KEY_ALIAS: ci
+          KEY_PASSWORD: ci_pass
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: TS Recipe ${{ github.ref_name }}
+          body_path: CHANGELOG.md
+          files: build/app/outputs/flutter-apk/app-release.apk
+          make_latest: true
