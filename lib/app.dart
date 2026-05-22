@@ -78,7 +78,7 @@ class RecipesyApp extends ConsumerWidget {
     final theme = ref.watch(themeDataProvider);
 
     return MaterialApp.router(
-      title: 'recipesy',
+      title: 'TS Recipe',
       debugShowCheckedModeBanner: false,
       locale: locale,
       supportedLocales: AppLocalizations.supportedLocales,

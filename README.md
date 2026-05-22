@@ -1,15 +1,18 @@
-# recipesy
+# TS Recipe
 
-Find and save your favorite recipes.
+Find and save your favorite recipes. Browse world cuisines, search the web via DuckDuckGo, save to meal-time categories, and enjoy on-device translation to Turkish.
+
+## Tech Stack
+
+- Flutter + Riverpod + GoRouter
+- TheMealDB API (world cuisine browsing)
+- DuckDuckGo Instant Answer API (web recipe search)
+- Google ML Kit Translation (on-device EN→TR)
+- Hive (local storage)
 
 ## Getting Started
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+flutter pub get
+flutter run
+```

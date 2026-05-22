@@ -60,6 +60,7 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'TS Recipe',
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Center(
