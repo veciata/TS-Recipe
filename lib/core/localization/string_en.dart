@@ -44,6 +44,8 @@ class EnStrings {
   static const loading = 'Loading...';
   static const errorOccurred = 'An error occurred';
   static const retry = 'Retry';
+  static const myMeals = 'My Meals';
+  static const suggestions = 'Suggestions';
   static const savedToCategory = 'Saved to {category}';
   static const removedFromSaved = 'Removed from saved recipes';
 }

@@ -53,4 +53,15 @@ class ApiService {
     final list = data['meals'] as List<dynamic>? ?? [];
     return list.map((e) => Recipe.fromJson(e as Map<String, dynamic>)).toList();
   }
+
+  Future<List<Recipe>> getRandomRecipes(int count) async {
+    final results = await Future.wait(
+      List.generate(count, (_) => _dio.get('/random.php', queryParameters: {})),
+    );
+    return results.map((response) {
+      final data = response.data as Map<String, dynamic>;
+      final list = data['meals'] as List<dynamic>;
+      return Recipe.fromJson(list[0] as Map<String, dynamic>);
+    }).toList();
+  }
 }

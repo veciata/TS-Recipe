@@ -34,3 +34,8 @@ final duckDuckGoSearchProvider = FutureProvider.family<List<SearchResult>, Strin
   final ddg = ref.watch(duckDuckGoServiceProvider);
   return ddg.searchRecipes(query);
 });
+
+final randomRecipesProvider = FutureProvider<List<Recipe>>((ref) async {
+  final api = ref.watch(apiServiceProvider);
+  return api.getRandomRecipes(4);
+});

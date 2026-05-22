@@ -70,6 +70,8 @@ class AppLocalizations {
   String get source => _t(() => EnStrings.source, () => TrStrings.source);
   String get youTube => _t(() => EnStrings.youTube, () => TrStrings.youTube);
 
+  String get myMeals => _t(() => EnStrings.myMeals, () => TrStrings.myMeals);
+  String get suggestions => _t(() => EnStrings.suggestions, () => TrStrings.suggestions);
   String get savedToCategory => _t(() => EnStrings.savedToCategory, () => TrStrings.savedToCategory);
   String get removedFromSaved => _t(() => EnStrings.removedFromSaved, () => TrStrings.removedFromSaved);
 
@@ -118,6 +120,19 @@ class AppLocalizations {
     'Turkish': {'tr': 'Türk', 'en': 'Turkish'},
     'Vietnamese': {'tr': 'Vietnam', 'en': 'Vietnamese'},
   };
+
+  static const _mealCategoryTranslations = <String, Map<String, String>>{
+    'Kahvaltı': {'tr': 'Kahvaltı', 'en': 'Breakfast'},
+    'Öğle Yemeği': {'tr': 'Öğle Yemeği', 'en': 'Lunch'},
+    'Akşam Yemeği': {'tr': 'Akşam Yemeği', 'en': 'Dinner'},
+    'Çay': {'tr': 'Çay', 'en': 'Tea'},
+    'Ara Öğün': {'tr': 'Ara Öğün', 'en': 'Snack'},
+  };
+
+  String translateMealCategory(String name) {
+    final lang = locale.languageCode;
+    return _mealCategoryTranslations[name]?[lang] ?? name;
+  }
 
   String translateCategory(String category) {
     final lang = locale.languageCode;

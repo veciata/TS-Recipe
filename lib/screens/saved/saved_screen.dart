@@ -68,6 +68,7 @@ class SavedScreen extends ConsumerWidget {
               padding: const EdgeInsets.only(bottom: 8),
               child: SavedCategoryCard(
                 category: cat,
+                displayName: cat.id == 'uncategorized' ? null : l10n.translateMealCategory(cat.name),
                 recipeCount: count,
                 onTap: () => context.push('/saved-category', extra: {'id': cat.id, 'name': cat.name}),
               ),

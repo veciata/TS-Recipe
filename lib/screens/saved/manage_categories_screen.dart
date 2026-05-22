@@ -45,7 +45,7 @@ class ManageCategoriesScreen extends ConsumerWidget {
                       backgroundColor: color.withValues(alpha: 0.2),
                       child: Icon(Icons.bookmark, color: color, size: 20),
                     ),
-                    title: Text(cat.name),
+                    title: Text(l10n.translateMealCategory(cat.name)),
                     subtitle: Text(l10n.recipeCount(0)),
                     trailing: PopupMenuButton<String>(
                       onSelected: (value) {

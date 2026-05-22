@@ -44,6 +44,8 @@ class TrStrings {
   static const loading = 'Yükleniyor...';
   static const errorOccurred = 'Bir hata oluştu';
   static const retry = 'Tekrar Dene';
+  static const myMeals = 'Öğünlerim';
+  static const suggestions = 'Öneriler';
   static const savedToCategory = '{category} kaydedildi';
   static const removedFromSaved = 'Kaydedilenlerden çıkarıldı';
 }

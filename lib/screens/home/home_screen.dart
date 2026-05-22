@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import '../../core/localization/app_localizations.dart';
 import '../../providers/saved_provider.dart';
 import '../../providers/recipe_provider.dart';
@@ -36,7 +37,7 @@ class HomeScreen extends ConsumerWidget {
             children: [
               if (categories.isNotEmpty) ...[
                 Text(
-                  'Öğünlerim',
+                  l10n.myMeals,
                   style: Theme.of(context).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 12),
@@ -46,6 +47,7 @@ class HomeScreen extends ConsumerWidget {
                     padding: const EdgeInsets.only(bottom: 8),
                     child: SavedCategoryCard(
                       category: cat,
+                      displayName: l10n.translateMealCategory(cat.name),
                       recipeCount: count,
                       onTap: () => context.push('/saved-category', extra: {'id': cat.id, 'name': cat.name}),
                     ),
@@ -53,6 +55,13 @@ class HomeScreen extends ConsumerWidget {
                 }),
                 const SizedBox(height: 24),
               ],
+              Text(
+                l10n.suggestions,
+                style: Theme.of(context).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(height: 12),
+              _buildSuggestions(context, ref),
+              const SizedBox(height: 24),
               Card(
                 child: InkWell(
                   onTap: () => context.push('/world-cuisines'),
@@ -149,6 +158,57 @@ class HomeScreen extends ConsumerWidget {
             ],
           ),
         ],
+      ),
+    );
+  }
+
+  Widget _buildSuggestions(BuildContext context, WidgetRef ref) {
+    final randomAsync = ref.watch(randomRecipesProvider);
+    return randomAsync.when(
+      loading: () => const SizedBox(height: 100, child: Center(child: CircularProgressIndicator(strokeWidth: 2))),
+      error: (_, _) => const SizedBox.shrink(),
+      data: (recipes) => SizedBox(
+        height: 180,
+        child: ListView.separated(
+          scrollDirection: Axis.horizontal,
+          itemCount: recipes.length,
+          separatorBuilder: (_, _) => const SizedBox(width: 12),
+          itemBuilder: (context, index) {
+            final recipe = recipes[index];
+            return SizedBox(
+              width: 140,
+              child: Card(
+                clipBehavior: Clip.antiAlias,
+                child: InkWell(
+                  onTap: () => context.push('/recipe', extra: recipe.id),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Expanded(
+                        child: CachedNetworkImage(
+                          imageUrl: recipe.imageUrl,
+                          fit: BoxFit.cover,
+                          width: double.infinity,
+                          placeholder: (_, _) => const Center(child: CircularProgressIndicator(strokeWidth: 2)),
+                          errorWidget: (_, _, _) => const Center(child: Icon(Icons.broken_image)),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8),
+                        child: Text(
+                          recipe.name,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: Theme.of(context).textTheme.bodySmall?.copyWith(fontWeight: FontWeight.w500),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            );
+          },
+        ),
       ),
     );
   }

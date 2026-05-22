@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
+import '../core/localization/app_localizations.dart';
 import '../models/saved_category.dart';
 
 class SavedCategoryCard extends StatelessWidget {
   final SavedCategory category;
   final int recipeCount;
   final VoidCallback onTap;
+  final String? displayName;
 
   const SavedCategoryCard({
     super.key,
     required this.category,
     required this.recipeCount,
     required this.onTap,
+    this.displayName,
   });
 
   @override
@@ -34,11 +37,11 @@ class SavedCategoryCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      category.name,
+                      displayName ?? category.name,
                       style: Theme.of(context).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w600),
                     ),
                     Text(
-                      '$recipeCount tarif',
+                      AppLocalizations.of(context).recipeCount(recipeCount),
                       style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.grey),
                     ),
                   ],
