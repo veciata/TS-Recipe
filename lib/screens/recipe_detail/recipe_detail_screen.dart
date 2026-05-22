@@ -102,7 +102,7 @@ class _RecipeDetailScreenState extends ConsumerState<RecipeDetailScreen> {
                             children: [
                               const Icon(Icons.circle, size: 6),
                               const SizedBox(width: 8),
-                              Expanded(child: Text('$ingredients[$i] — $measure')),
+                              Expanded(child: Text('${ingredients[i]} — $measure')),
                             ],
                           ),
                         );
