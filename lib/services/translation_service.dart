@@ -9,10 +9,6 @@ class TranslationService {
       sourceLanguage: TranslateLanguage.english,
       targetLanguage: TranslateLanguage.turkish,
     );
-    try {
-      final manager = OnDeviceTranslatorModelManager();
-      await manager.downloadModel('en_tr', isWifiRequired: false);
-    } catch (_) {}
   }
 
   Future<String> translate(String text) async {
