@@ -16,3 +16,4 @@ Find and save your favorite recipes. Browse world cuisines, search the web via D
 flutter pub get
 flutter run
 ```
+# Auto-release test
