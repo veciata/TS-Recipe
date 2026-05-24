@@ -1,0 +1,482 @@
+{
+  "/home/veciata/Projects/flutter/tsresepy/lib/app.dart": {
+    "mtime": 1779439190.724756,
+    "hash": "15365948083b1a143c6ad73f3f165bde"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/main.dart": {
+    "mtime": 1779439204.1796167,
+    "hash": "1fffd8b9ad5d8a39c9df99a18f4f0e7e"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/models/recipe_category.dart": {
+    "mtime": 1779435847.982245,
+    "hash": "ffe8a2aead0933e028351bea1c4bf0ba"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/models/recipe.dart": {
+    "mtime": 1779435846.757245,
+    "hash": "12d5d57f024fbd25797d1eb20369cc69"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/models/saved_category.dart": {
+    "mtime": 1779435985.6413777,
+    "hash": "867a56577eee79920a93f6c746ef1c3a"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/models/saved_recipe.dart": {
+    "mtime": 1779437776.4165661,
+    "hash": "79d92822efcab41ca8712a9da960bf36"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/models/search_result.dart": {
+    "mtime": 1779437752.3126059,
+    "hash": "5e6321d26bf51ffb270348cb1e6df28d"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/providers/recipe_provider.dart": {
+    "mtime": 1779442067.388898,
+    "hash": "c3009d1ee69f66c02a7841d5adebef66"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/providers/translation_provider.dart": {
+    "mtime": 1779437501.2265067,
+    "hash": "db94025b25d5d6298c67cd63bfdc5b4b"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/providers/saved_provider.dart": {
+    "mtime": 1779437789.9875467,
+    "hash": "935ab638bd1c9bcecc8535061004e4f0"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/providers/local_storage_provider.dart": {
+    "mtime": 1779435921.6232815,
+    "hash": "0629dd7e8952a4f16e3ca1b236a6d4db"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/providers/settings_provider.dart": {
+    "mtime": 1779436074.392596,
+    "hash": "3b6b956f65f3f61c5b05188931ee4334"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/core/theme/app_theme.dart": {
+    "mtime": 1779435873.0952477,
+    "hash": "74cd65be0ae6f69384cb5d6af79aa23a"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/core/localization/string_tr.dart": {
+    "mtime": 1779442023.2708156,
+    "hash": "e17d128488e03eaf2724114ce31a1dfa"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/core/localization/app_localizations.dart": {
+    "mtime": 1779442034.3728366,
+    "hash": "fb80cd29c162bc0639fb13f32f855044"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/core/localization/string_en.dart": {
+    "mtime": 1779442022.0698135,
+    "hash": "89bc0b08885311e5c74ae33cc3a0ae7d"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/core/constants/app_constants.dart": {
+    "mtime": 1779435855.2882447,
+    "hash": "849d381186e9e8901194a91ef0c288da"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/screens/saved/saved_screen.dart": {
+    "mtime": 1779442098.517955,
+    "hash": "e4459368cd924d55eeb5685ae51331a9"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/screens/saved/saved_category_recipes_screen.dart": {
+    "mtime": 1779437791.324545,
+    "hash": "ffe0e4224282550e500d31de1b7d6482"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/screens/saved/manage_categories_screen.dart": {
+    "mtime": 1779442118.1909907,
+    "hash": "1baa18892d0db720786bc5658db8300e"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/screens/home/world_cuisines_screen.dart": {
+    "mtime": 1779437173.7517014,
+    "hash": "e4ee46fbbe3215e88278b6656ab73183"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/screens/home/home_screen.dart": {
+    "mtime": 1779442137.0370247,
+    "hash": "06cd187512161bc7995b7850ea57bb50"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/screens/home/category_recipes_screen.dart": {
+    "mtime": 1779437169.859759,
+    "hash": "62d7b6d1abdb8fb2ba6d88d2c0d8eed9"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/screens/settings/settings_screen.dart": {
+    "mtime": 1779436701.6449158,
+    "hash": "27d11800628c30613c65b615064f478d"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/screens/recipe_detail/recipe_detail_screen.dart": {
+    "mtime": 1779442872.2682097,
+    "hash": "6d2c02e899d20460eb222abb42aa3b40"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/screens/search/search_screen.dart": {
+    "mtime": 1779442619.8508244,
+    "hash": "d25c27fe3a6ebfbf3f69942550cb3744"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/services/url_launcher_service.dart": {
+    "mtime": 1779439424.1428323,
+    "hash": "3f88cb6a46e6f75a960d1ca69e02efb2"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/services/settings_service.dart": {
+    "mtime": 1779436978.4963984,
+    "hash": "6876e60e585c13eb0efede2f034a9ae5"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/services/duck_duck_go_service.dart": {
+    "mtime": 1779437758.8315945,
+    "hash": "8f92f736ee84cea0a3c991f4c8b64553"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/services/storage_service.dart": {
+    "mtime": 1779437787.4585502,
+    "hash": "60f9ef74366ed64691b474ad140dfa47"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/services/api_service.dart": {
+    "mtime": 1779442054.6188743,
+    "hash": "469d41c96a1d47dd9042a59b5402a924"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/services/translation_service.dart": {
+    "mtime": 1779439961.3919353,
+    "hash": "ef67f56dfcb8b78104e192b4eb79f873"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/widgets/category_card.dart": {
+    "mtime": 1779436490.6455524,
+    "hash": "4340884ce81fd00e031057e5e12b5871"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/widgets/recipe_card.dart": {
+    "mtime": 1779436096.2176633,
+    "hash": "5b0f67a09ef8c2fc87b41d839785c660"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/lib/widgets/saved_category_card.dart": {
+    "mtime": 1779442113.1149817,
+    "hash": "b2736f98d2dbc5eb781a9adde8f9dd32"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/windows/flutter/generated_plugin_registrant.h": {
+    "mtime": 1779435005.567623,
+    "hash": "0ea33875f9f8e118f9c2ded03e2e2835"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/windows/flutter/generated_plugin_registrant.cc": {
+    "mtime": 1779439479.1775062,
+    "hash": "a8f91348d8d9090f22ec69d597c41e1f"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/windows/runner/win32_window.h": {
+    "mtime": 1779435004.8175888,
+    "hash": "5a4cf051798d7e6931ee0405a4523c8f"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/windows/runner/flutter_window.h": {
+    "mtime": 1779435004.8166332,
+    "hash": "79bea736711adda00c49419a39a4a0b4"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/windows/runner/flutter_window.cpp": {
+    "mtime": 1779435004.8164651,
+    "hash": "9b92b95a9eecce25e3e9d356688d0cb6"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/windows/runner/utils.cpp": {
+    "mtime": 1779435004.8176954,
+    "hash": "e56aa0d1b2e1b995000d67e8e069b83f"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/windows/runner/main.cpp": {
+    "mtime": 1779435004.8168168,
+    "hash": "a0ef7158a39933467416aa6dd0248fed"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/windows/runner/resource.h": {
+    "mtime": 1779435004.8169284,
+    "hash": "c8f809a4f8d3f2f625e358fd90f72fee"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/windows/runner/utils.h": {
+    "mtime": 1779435004.8171315,
+    "hash": "c741fb9cddbf3a62f4688b6cca39ddcc"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/windows/runner/win32_window.cpp": {
+    "mtime": 1779435004.8172317,
+    "hash": "928e86a2be27eca688669dce6c9177d9"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/android/settings.gradle.kts": {
+    "mtime": 1779435004.7710733,
+    "hash": "4440672748462857e9bdbbf5fd06fe1a"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/android/build.gradle.kts": {
+    "mtime": 1779435004.763905,
+    "hash": "f11f360aed44d4f6871b398346af14f0"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/android/gradlew": {
+    "mtime": 1779435004.8314645,
+    "hash": "7f1cd7eb3f75a1dc85cd37753972a6e2"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/android/app/build.gradle.kts": {
+    "mtime": 1779444036.4781506,
+    "hash": "466213c572f0dc4576aec498bb15f14b"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/android/app/src/main/kotlin/com/example/tsresepy/MainActivity.kt": {
+    "mtime": 1779439442.0677216,
+    "hash": "dcb3d0f2ceb1fc578402b62bdf51f744"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java": {
+    "mtime": 1779439479.1735063,
+    "hash": "10dbc77a60f656df8e671e578aca3b22"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/linux/flutter/generated_plugin_registrant.h": {
+    "mtime": 1779435005.5660875,
+    "hash": "d295462c9da9f7fef22dc86c34492318"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/linux/flutter/generated_plugin_registrant.cc": {
+    "mtime": 1779439479.1755064,
+    "hash": "d07afe003d5837167bdd357d593f20a0"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/linux/runner/my_application.cc": {
+    "mtime": 1779435004.7974658,
+    "hash": "7f212f91d4dcc75e99799cd58ef60c2a"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/linux/runner/main.cc": {
+    "mtime": 1779435004.7971995,
+    "hash": "0643b8609698e96b3abd63c210361a87"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/linux/runner/my_application.h": {
+    "mtime": 1779435004.7979274,
+    "hash": "326a85d68857137fdfe8698a0c071baf"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/test/widget_test.dart": {
+    "mtime": 1779436075.4985993,
+    "hash": "fa8639f4f0ceaf9e390402cec2491952"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/macos/RunnerTests/RunnerTests.swift": {
+    "mtime": 1779435004.8114653,
+    "hash": "97d3a20fd20a063c192e886d1822b4a8"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/macos/Flutter/GeneratedPluginRegistrant.swift": {
+    "mtime": 1779439479.1815064,
+    "hash": "c2aa53d101a6bfaf3e29ecf915a1516f"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/macos/Flutter/ephemeral/Packages/FlutterGeneratedPluginSwiftPackage/Package.swift": {
+    "mtime": 1779442985.878379,
+    "hash": "61d013e6c93b3d917c4f6178b9f6c9cb"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/macos/Flutter/ephemeral/Packages/FlutterGeneratedPluginSwiftPackage/Sources/FlutterGeneratedPluginSwiftPackage/FlutterGeneratedPluginSwiftPackage.swift": {
+    "mtime": 1779442178.7257001,
+    "hash": "e6366d8685ad56268730656aa0a6e00c"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/macos/Runner/AppDelegate.swift": {
+    "mtime": 1779435004.8070297,
+    "hash": "2a7411ae3e7c6715525b94b6f8d2e80b"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/macos/Runner/MainFlutterWindow.swift": {
+    "mtime": 1779435004.8073754,
+    "hash": "4a747b1f256d62a2bbb79bd976891eb5"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/ios/RunnerTests/RunnerTests.swift": {
+    "mtime": 1779435004.7944605,
+    "hash": "a225a382d14d7b16b6f602a5c1d49331"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/ios/Flutter/ephemeral/flutter_lldb_helper.py": {
+    "mtime": 1779442178.5751092,
+    "hash": "98fc75412162af387e2e3461e4e58094"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/ios/Flutter/ephemeral/Packages/FlutterGeneratedPluginSwiftPackage/Package.swift": {
+    "mtime": 1779442985.873379,
+    "hash": "63bc00d19466662a75b7492ac07d5a97"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/ios/Flutter/ephemeral/Packages/FlutterGeneratedPluginSwiftPackage/Sources/FlutterGeneratedPluginSwiftPackage/FlutterGeneratedPluginSwiftPackage.swift": {
+    "mtime": 1779442178.7178392,
+    "hash": "e6366d8685ad56268730656aa0a6e00c"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/ios/Runner/AppDelegate.swift": {
+    "mtime": 1779435004.7865329,
+    "hash": "2bd8469f2a4b701ff582f6574e58b13c"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/ios/Runner/SceneDelegate.swift": {
+    "mtime": 1779435004.7872274,
+    "hash": "748d701e783e68faf618c00464257a19"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/ios/Runner/GeneratedPluginRegistrant.m": {
+    "mtime": 1779439479.1805062,
+    "hash": "bf49ed443932eb225da3d26d1ff27b37"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/ios/Runner/Runner-Bridging-Header.h": {
+    "mtime": 1779435004.7871158,
+    "hash": "e07862ac930ed4d8479185d52c6cc66d"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/ios/Runner/GeneratedPluginRegistrant.h": {
+    "mtime": 1779435005.5688756,
+    "hash": "decb9041b5e91a07e66f4664e5dac408"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/README.md": {
+    "mtime": 1779439227.6243834,
+    "hash": "b3ee1de660a3298184cd89871c056ded"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/pubspec.yaml": {
+    "mtime": 1779443904.1571498,
+    "hash": "07ccc280431db2d9830899840d70b0f9"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/CHANGELOG.md": {
+    "mtime": 1779444041.8251512,
+    "hash": "42e519c9b36212023819ce61ba22ced3"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/analysis_options.yaml": {
+    "mtime": 1779435004.819465,
+    "hash": "66d03d7647c8e438164feaf5b922d44a"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/web/index.html": {
+    "mtime": 1779435004.8134866,
+    "hash": "169a2456051d938fa7290dde09331ac9"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/windows/CMakeLists.txt": {
+    "mtime": 1779435004.818465,
+    "hash": "507fcc867600f37353e41953d9cc3483"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/windows/flutter/CMakeLists.txt": {
+    "mtime": 1779435004.8144653,
+    "hash": "0c500410e3259a9a053797dc1c28070e"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/windows/runner/CMakeLists.txt": {
+    "mtime": 1779435004.8161044,
+    "hash": "e99a99b5cc82a168fc557eb23b8d5a96"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/linux/CMakeLists.txt": {
+    "mtime": 1779435004.7984657,
+    "hash": "02dd50c888566730aba5c70572f66997"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/linux/flutter/CMakeLists.txt": {
+    "mtime": 1779435004.7968307,
+    "hash": "46690fb8ffaf7d227d8bc4713f31140d"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/linux/runner/CMakeLists.txt": {
+    "mtime": 1779435004.7970574,
+    "hash": "6d75431dc21756981b53a7494c836311"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md": {
+    "mtime": 1779435004.7861683,
+    "hash": "e175e436acacf76c814d83532d0b662c"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/web/favicon.png": {
+    "mtime": 1779435004.8132367,
+    "hash": "5dcef449791fa27946b3d35ad8803796"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/web/icons/Icon-maskable-192.png": {
+    "mtime": 1779435004.8127096,
+    "hash": "c457ef57daa1d16f64b27b786ec2ea3c"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/web/icons/Icon-192.png": {
+    "mtime": 1779435004.8121226,
+    "hash": "ac9a721a12bbc803b44f645561ecb1e1"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/web/icons/Icon-512.png": {
+    "mtime": 1779435004.8123643,
+    "hash": "96e752610906ba2a93c65f8abe1645f1"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/web/icons/Icon-maskable-512.png": {
+    "mtime": 1779435004.812926,
+    "hash": "301a7604d45b3e739efc881eb04896ea"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/android/app/src/main/res/mipmap-mdpi/ic_launcher.png": {
+    "mtime": 1779435004.7664669,
+    "hash": "6270344430679711b81476e29878caa7"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/android/app/src/main/res/mipmap-hdpi/ic_launcher.png": {
+    "mtime": 1779435004.765236,
+    "hash": "13e9c72ec37fac220397aa819fa1ef2d"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png": {
+    "mtime": 1779435004.7696009,
+    "hash": "57838d52c318faff743130c3fcfae0c6"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png": {
+    "mtime": 1779435004.7690623,
+    "hash": "afe1b655b9f32da22f9a4301bb8e6ba8"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png": {
+    "mtime": 1779435004.7674043,
+    "hash": "a0a8db5985280b3679d99a820ae2db79"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_1024.png": {
+    "mtime": 1779435004.8004656,
+    "hash": "c9becc9105f8cabce934d20c7bfb6aac"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_32.png": {
+    "mtime": 1779435004.8034656,
+    "hash": "8e0ae58e362a6636bdfccbc04da2c58c"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_256.png": {
+    "mtime": 1779435004.8029685,
+    "hash": "dfe2c93d1536ae02f085cc63faa3430e"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_64.png": {
+    "mtime": 1779435004.8048692,
+    "hash": "04e7b6ef05346c70b663ca1d97de3ad5"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_128.png": {
+    "mtime": 1779435004.8014884,
+    "hash": "3ded30823804caaa5ccc944067c54a36"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_512.png": {
+    "mtime": 1779435004.8044655,
+    "hash": "0ad44039155424738917502c69667699"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_16.png": {
+    "mtime": 1779435004.8024657,
+    "hash": "8bf511604bc6ed0a6aeb380c5113fdcf"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/assets/logo.png": {
+    "mtime": 1779436768.2953787,
+    "hash": "aadf0d88ce52ccfd8b5f9a70b17aae74"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png": {
+    "mtime": 1779435004.7777503,
+    "hash": "2247a840b6ee72b8a069208af170e5b1"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png": {
+    "mtime": 1779435004.7754667,
+    "hash": "1b3b1538136316263c7092951e923e9d"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png": {
+    "mtime": 1779435004.775126,
+    "hash": "2247a840b6ee72b8a069208af170e5b1"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png": {
+    "mtime": 1779435004.7806318,
+    "hash": "36c0d7a7132bdde18898ffdfcfcdc4d2"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png": {
+    "mtime": 1779435004.776557,
+    "hash": "043119ef4faa026ff82bd03f241e5338"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png": {
+    "mtime": 1779435004.7744665,
+    "hash": "c785f8932297af4acd5f5ccb7630f01c"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png": {
+    "mtime": 1779435004.7814665,
+    "hash": "643842917530acf4c5159ae851b0baf2"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png": {
+    "mtime": 1779435004.7794664,
+    "hash": "e419d22a37bc40ba185aca1acb6d4ac6"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png": {
+    "mtime": 1779435004.7784665,
+    "hash": "5b3c0902200ce596e9848f22e1f0fe0e"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png": {
+    "mtime": 1779435004.7749097,
+    "hash": "a2f8558fb1d42514111fbbb19fb67314"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png": {
+    "mtime": 1779435004.7792106,
+    "hash": "5b3c0902200ce596e9848f22e1f0fe0e"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png": {
+    "mtime": 1779435004.782078,
+    "hash": "665cb5e3c5729da6d639d26eff47a503"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png": {
+    "mtime": 1779435004.7779703,
+    "hash": "8245359312aea1b0d2412f79a07b0ca5"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png": {
+    "mtime": 1779435004.7774665,
+    "hash": "2b1452c4c1bda6177b4fbbb832df217f"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png": {
+    "mtime": 1779435004.7763324,
+    "hash": "be8887071dd7ec39cb754d236aa9584f"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png": {
+    "mtime": 1779435004.7849605,
+    "hash": "978c1bee49d7ad5fc1a4d81099b13e18"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png": {
+    "mtime": 1779435004.7844663,
+    "hash": "978c1bee49d7ad5fc1a4d81099b13e18"
+  },
+  "/home/veciata/Projects/flutter/tsresepy/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png": {
+    "mtime": 1779435004.7854662,
+    "hash": "978c1bee49d7ad5fc1a4d81099b13e18"
+  }
+}

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'core/config/env_config.dart';
 import 'providers/settings_provider.dart';
 import 'providers/local_storage_provider.dart';
 import 'providers/translation_provider.dart';
@@ -8,6 +9,11 @@ import 'app.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await EnvConfig.load();
+  assert(() {
+    debugPrint('TS Recipe API → ${EnvConfig.apiServerBaseUrl}');
+    return true;
+  }());
   await Hive.initFlutter();
 
   runApp(
@@ -41,6 +47,10 @@ class _RecipesyInitializerState extends ConsumerState<_RecipesyInitializer> {
     await storageService.init();
     if (!settingsService.hasDefaults) {
       await storageService.initDefaults();
+      final systemDark = WidgetsBinding
+              .instance.platformDispatcher.platformBrightness ==
+          Brightness.dark;
+      await settingsService.setDarkMode(systemDark);
       await settingsService.markDefaultsCreated();
     }
     final translationService = ref.read(translationServiceProvider);
@@ -59,9 +69,12 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final brightness =
+        WidgetsBinding.instance.platformDispatcher.platformBrightness;
     return MaterialApp(
       title: 'TS Recipe',
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(brightness: brightness),
       home: Scaffold(
         body: Center(
           child: Column(

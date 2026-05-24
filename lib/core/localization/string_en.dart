@@ -47,5 +47,24 @@ class EnStrings {
   static const myMeals = 'My Meals';
   static const suggestions = 'Suggestions';
   static const savedToCategory = 'Saved to {category}';
+  static const saveToSection = 'Save to section';
+  static const saveToSectionHint = 'Choose where to save this recipe';
   static const removedFromSaved = 'Removed from saved recipes';
+  static const login = 'Login';
+  static const register = 'Register';
+  static const email = 'Email';
+  static const password = 'Password';
+  static const confirmPassword = 'Confirm Password';
+  static const username = 'Username';
+  static const dontHaveAccount = "Don't have an account? Register";
+  static const alreadyHaveAccount = 'Already have an account? Login';
+  static const passwordsDoNotMatch = 'Passwords do not match';
+  static const loginSuccess = 'Login successful';
+  static const registerSuccess = 'Registration successful';
+  static const continueWithoutAccount = 'Continue without account';
+  static const browsingWithoutAccount = 'Browsing without an account';
+  static const signIn = 'Sign in';
+  static const signOut = 'Log out';
+  static const account = 'Account';
+  static const syncRequiresAccount = 'Sign in to sync with the server';
 }

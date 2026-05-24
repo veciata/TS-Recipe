@@ -47,5 +47,24 @@ class TrStrings {
   static const myMeals = 'Öğünlerim';
   static const suggestions = 'Öneriler';
   static const savedToCategory = '{category} kaydedildi';
+  static const saveToSection = 'Bölüme kaydet';
+  static const saveToSectionHint = 'Bu tarifi hangi bölüme kaydetmek istersiniz?';
   static const removedFromSaved = 'Kaydedilenlerden çıkarıldı';
+  static const login = 'Giriş Yap';
+  static const register = 'Kayıt Ol';
+  static const email = 'E-posta';
+  static const password = 'Şifre';
+  static const confirmPassword = 'Şifreyi Onayla';
+  static const username = 'Kullanıcı Adı';
+  static const dontHaveAccount = 'Hesabın yok mu? Kayıt Ol';
+  static const alreadyHaveAccount = 'Zaten hesabın var mı? Giriş Yap';
+  static const passwordsDoNotMatch = 'Şifreler eşleşmiyor';
+  static const loginSuccess = 'Giriş başarılı';
+  static const registerSuccess = 'Kayıt başarılı';
+  static const continueWithoutAccount = 'Hesap olmadan devam et';
+  static const browsingWithoutAccount = 'Hesap olmadan geziniyorsunuz';
+  static const signIn = 'Giriş yap';
+  static const signOut = 'Çıkış yap';
+  static const account = 'Hesap';
+  static const syncRequiresAccount = 'Sunucu ile senkron için giriş yapın';
 }

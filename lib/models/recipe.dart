@@ -23,6 +23,46 @@ class Recipe {
     this.youtubeUrl,
   });
 
+  factory Recipe.fromServerJson(Map<String, dynamic> json) {
+    final rawIngredients = json['ingredients'];
+    final ingredients = rawIngredients is List
+        ? rawIngredients.map((e) => e.toString()).toList()
+        : (rawIngredients as String?)
+                ?.split('\n')
+                .where((s) => s.trim().isNotEmpty)
+                .toList() ??
+            [];
+
+    return Recipe(
+      id: (json['id'] ?? json['idMeal'] ?? '').toString(),
+      name: (json['title'] ?? json['name'] ?? json['strMeal'] ?? '').toString(),
+      category: (json['category'] ?? json['strCategory'] ?? '').toString(),
+      area: (json['area'] ?? json['strArea'] ?? '').toString(),
+      instructions:
+          (json['instructions'] ?? json['strInstructions'] ?? '').toString(),
+      imageUrl: (json['imageUrl'] ?? json['image_url'] ?? json['strMealThumb'] ?? '')
+          .toString(),
+      ingredients: ingredients,
+      measures: const [],
+      sourceUrl: json['sourceUrl'] as String? ?? json['strSource'] as String?,
+      youtubeUrl: json['youtubeUrl'] as String? ?? json['strYoutube'] as String?,
+    );
+  }
+
+  factory Recipe.fromLocalRow(Map<String, dynamic> row) {
+    final raw = row['ingredients'] as String?;
+    return Recipe(
+      id: row['id'].toString(),
+      name: row['title'] as String? ?? '',
+      category: '',
+      area: '',
+      instructions: row['instructions'] as String? ?? '',
+      imageUrl: row['imageUrl'] as String? ?? '',
+      ingredients: raw?.split('\n').where((s) => s.trim().isNotEmpty).toList() ?? [],
+      measures: const [],
+    );
+  }
+
   factory Recipe.fromJson(Map<String, dynamic> json) {
     final ingredients = <String>[];
     final measures = <String>[];

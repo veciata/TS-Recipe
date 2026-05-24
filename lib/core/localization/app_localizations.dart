@@ -73,7 +73,31 @@ class AppLocalizations {
   String get myMeals => _t(() => EnStrings.myMeals, () => TrStrings.myMeals);
   String get suggestions => _t(() => EnStrings.suggestions, () => TrStrings.suggestions);
   String get savedToCategory => _t(() => EnStrings.savedToCategory, () => TrStrings.savedToCategory);
+  String get saveToSection =>
+      _t(() => EnStrings.saveToSection, () => TrStrings.saveToSection);
+  String get saveToSectionHint =>
+      _t(() => EnStrings.saveToSectionHint, () => TrStrings.saveToSectionHint);
   String get removedFromSaved => _t(() => EnStrings.removedFromSaved, () => TrStrings.removedFromSaved);
+  String get login => _t(() => EnStrings.login, () => TrStrings.login);
+  String get register => _t(() => EnStrings.register, () => TrStrings.register);
+  String get email => _t(() => EnStrings.email, () => TrStrings.email);
+  String get password => _t(() => EnStrings.password, () => TrStrings.password);
+  String get confirmPassword => _t(() => EnStrings.confirmPassword, () => TrStrings.confirmPassword);
+  String get username => _t(() => EnStrings.username, () => TrStrings.username);
+  String get dontHaveAccount => _t(() => EnStrings.dontHaveAccount, () => TrStrings.dontHaveAccount);
+  String get alreadyHaveAccount => _t(() => EnStrings.alreadyHaveAccount, () => TrStrings.alreadyHaveAccount);
+  String get passwordsDoNotMatch => _t(() => EnStrings.passwordsDoNotMatch, () => TrStrings.passwordsDoNotMatch);
+  String get loginSuccess => _t(() => EnStrings.loginSuccess, () => TrStrings.loginSuccess);
+  String get registerSuccess => _t(() => EnStrings.registerSuccess, () => TrStrings.registerSuccess);
+  String get continueWithoutAccount =>
+      _t(() => EnStrings.continueWithoutAccount, () => TrStrings.continueWithoutAccount);
+  String get browsingWithoutAccount =>
+      _t(() => EnStrings.browsingWithoutAccount, () => TrStrings.browsingWithoutAccount);
+  String get signIn => _t(() => EnStrings.signIn, () => TrStrings.signIn);
+  String get signOut => _t(() => EnStrings.signOut, () => TrStrings.signOut);
+  String get account => _t(() => EnStrings.account, () => TrStrings.account);
+  String get syncRequiresAccount =>
+      _t(() => EnStrings.syncRequiresAccount, () => TrStrings.syncRequiresAccount);
 
   static const _categoryTranslations = <String, Map<String, String>>{
     'Beef': {'tr': 'Et', 'en': 'Beef'},

@@ -9,6 +9,8 @@ import '../../providers/saved_provider.dart';
 import '../../models/recipe.dart';
 import '../../providers/translation_provider.dart';
 import '../../services/translation_service.dart';
+import '../../services/local_database_service.dart';
+import '../../widgets/save_recipe_category_sheet.dart';
 
 class RecipeDetailScreen extends ConsumerStatefulWidget {
   final String recipeId;
@@ -23,6 +25,40 @@ class _RecipeDetailScreenState extends ConsumerState<RecipeDetailScreen> {
   List<String> _translatedIngredients = [];
   String _translatedInstructions = '';
   bool _translating = true;
+
+  @override
+  void initState() {
+    super.initState();
+    _saveRecipeOnAppear();
+  }
+
+  Future<void> _saveRecipeOnAppear() async {
+    final recipeAsync = ref.read(recipeDetailProvider(widget.recipeId));
+    recipeAsync.when(
+      data: (recipe) => _saveRecipeLocallyIfNeeded(recipe),
+      loading: () => null,
+      error: (err, _) => null,
+    );
+  }
+
+  Future<void> _saveRecipeLocallyIfNeeded(Recipe recipe) async {
+    final localDb = LocalDatabaseService();
+    final existingRecipe = await localDb.getRecipeById(int.tryParse(widget.recipeId) ?? 0);
+    if (existingRecipe == null) {
+      await localDb.createRecipe({
+        'id': int.tryParse(widget.recipeId) ?? 0,
+        'title': recipe.name,
+        'description': '',
+        'ingredients': recipe.ingredients.join('\n'),
+        'instructions': recipe.instructions,
+        'imageUrl': recipe.imageUrl,
+        'categoryId': 1, // Default category ID
+        'isMyRecipe': 0,
+        'isPending': 0,
+        'likes': 0,
+      });
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -49,6 +85,7 @@ class _RecipeDetailScreenState extends ConsumerState<RecipeDetailScreen> {
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (err, _) => Center(child: Text('${l10n.errorOccurred}: $err')),
         data: (recipe) {
+          _saveRecipeLocallyIfNeeded(recipe);
           final ingredients = _translatedIngredients.isNotEmpty
               ? _translatedIngredients
               : recipe.ingredients;
@@ -192,13 +229,27 @@ class _RecipeDetailScreenState extends ConsumerState<RecipeDetailScreen> {
     } else {
       final recipe = recipeAsync.valueOrNull;
       if (recipe == null) return;
+      final categoryId = await showSaveRecipeCategorySheet(context, ref);
+      if (categoryId == null || !context.mounted) return;
+
       final categories = ref.read(savedCategoriesProvider);
-      final targetCategory = categories.isNotEmpty ? categories.first.id : 'uncategorized';
-      final saved = SavedRecipe.fromRecipe(recipe, targetCategory);
+      final saved = SavedRecipe.fromRecipe(recipe, categoryId);
       ref.read(savedRecipesProvider.notifier).save(saved);
+
+      final categoryName = categoryId == 'uncategorized'
+          ? l10n.uncategorized
+          : categories
+              .where((c) => c.id == categoryId)
+              .map((c) => l10n.translateMealCategory(c.name))
+              .firstOrNull ?? l10n.uncategorized;
+
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('${recipe.name} ${l10n.savedToCategory.replaceAll('{category}', categories.isNotEmpty ? categories.first.name : '')}')),
+          SnackBar(
+            content: Text(
+              l10n.savedToCategory.replaceAll('{category}', categoryName),
+            ),
+          ),
         );
       }
     }

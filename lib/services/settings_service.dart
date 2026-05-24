@@ -19,4 +19,7 @@ class SettingsService {
 
   bool get hasDefaults => _box.get('defaultsCreated', defaultValue: '') == 'true';
   Future<void> markDefaultsCreated() => _box.put('defaultsCreated', 'true');
+
+  bool get guestMode => _box.get('guestMode', defaultValue: 'false') == 'true';
+  Future<void> setGuestMode(bool value) => _box.put('guestMode', value.toString());
 }

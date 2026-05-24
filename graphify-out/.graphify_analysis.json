@@ -1,0 +1,721 @@
+{
+  "communities": {
+    "0": [
+      "aot_library",
+      "application_id",
+      "apply_standard_settings",
+      "binary_tsresepy",
+      "build_config_debug",
+      "build_config_profile",
+      "build_config_release",
+      "cmake_linux_flutter",
+      "cmake_linux_runner",
+      "cmake_linux_top",
+      "cmake_windows_flutter",
+      "cmake_windows_runner",
+      "cmake_windows_top",
+      "cpp_wrapper_app_sources",
+      "cpp_wrapper_core",
+      "cpp_wrapper_plugin_sources",
+      "dwmapi_win",
+      "ephemeral_dir",
+      "flutter_assemble",
+      "flutter_assets",
+      "flutter_icu_data",
+      "flutter_interface_lib",
+      "flutter_linux_so",
+      "flutter_windows_dll",
+      "flutter_wrapper_app",
+      "flutter_wrapper_plugin",
+      "generated_config_cmake",
+      "generated_plugins_cmake",
+      "gio_dep",
+      "glib_dep",
+      "gtk_dep",
+      "linux_runner_sources",
+      "native_assets",
+      "plugin_bundled_libraries",
+      "tool_backend_bat",
+      "tool_backend_sh",
+      "windows_runner_sources"
+    ],
+    "1": [
+      "android_ic_launcher_hdpi",
+      "android_ic_launcher_mdpi",
+      "android_ic_launcher_xhdpi",
+      "android_ic_launcher_xxhdpi",
+      "android_ic_launcher_xxxhdpi",
+      "ios_app_icon_1024",
+      "ios_app_icon_20_1x",
+      "ios_app_icon_20_2x",
+      "ios_app_icon_20_3x",
+      "ios_app_icon_29_1x",
+      "ios_app_icon_29_2x",
+      "ios_app_icon_29_3x",
+      "ios_app_icon_40_1x",
+      "ios_app_icon_40_2x",
+      "ios_app_icon_40_3x",
+      "ios_app_icon_60_2x",
+      "ios_app_icon_60_3x",
+      "ios_app_icon_76_1x",
+      "ios_app_icon_76_2x",
+      "ios_app_icon_83_5_2x",
+      "ios_launch_image",
+      "ios_launch_image_2x",
+      "ios_launch_image_3x",
+      "macos_app_icon_1024",
+      "macos_app_icon_128",
+      "macos_app_icon_16",
+      "macos_app_icon_256",
+      "macos_app_icon_32",
+      "macos_app_icon_512",
+      "macos_app_icon_64",
+      "tsresepy_app",
+      "tsresepy_app_icon",
+      "web_favicon",
+      "web_icon_192",
+      "web_icon_512",
+      "web_icon_maskable_192",
+      "web_icon_maskable_512"
+    ],
+    "2": [
+      "core_theme_app_theme_dart",
+      "dart_convert",
+      "home_veciata_projects_flutter_tsresepy_lib_providers_saved_provider_dart_issaved",
+      "home_veciata_projects_flutter_tsresepy_lib_providers_saved_provider_dart_refresh",
+      "home_veciata_projects_flutter_tsresepy_lib_providers_saved_provider_dart_savedcategoriesnotifier",
+      "home_veciata_projects_flutter_tsresepy_lib_providers_saved_provider_dart_savedrecipesnotifier",
+      "home_veciata_projects_flutter_tsresepy_lib_providers_settings_provider_dart_darkmodenotifier",
+      "home_veciata_projects_flutter_tsresepy_lib_providers_settings_provider_dart_localenotifier",
+      "home_veciata_projects_flutter_tsresepy_lib_providers_settings_provider_dart_themecolornotifier",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_saved_manage_categories_screen_dart_build",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_saved_manage_categories_screen_dart_card",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_saved_manage_categories_screen_dart_confirmdelete",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_saved_manage_categories_screen_dart_gesturedetector",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_saved_manage_categories_screen_dart_managecategoriesscreen",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_saved_manage_categories_screen_dart_scaffold",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_saved_manage_categories_screen_dart_showcategorydialog",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_saved_manage_categories_screen_dart_sizedbox",
+      "home_veciata_projects_flutter_tsresepy_lib_services_storage_service_dart_isrecipesaved",
+      "home_veciata_projects_flutter_tsresepy_lib_services_storage_service_dart_savecategory",
+      "home_veciata_projects_flutter_tsresepy_lib_services_storage_service_dart_saverecipe",
+      "home_veciata_projects_flutter_tsresepy_lib_services_storage_service_dart_storageservice",
+      "lib_providers_local_storage_provider_dart",
+      "lib_providers_saved_provider_dart",
+      "lib_providers_settings_provider_dart",
+      "lib_screens_saved_manage_categories_screen_dart",
+      "lib_services_storage_service_dart",
+      "local_storage_provider_dart",
+      "models_saved_category_dart",
+      "models_saved_recipe_dart",
+      "package_flutter_riverpod_flutter_riverpod_dart",
+      "package_uuid_uuid_dart",
+      "services_settings_service_dart",
+      "services_storage_service_dart"
+    ],
+    "3": [
+      "bilingual_language_toggle",
+      "browse_world_cuisines",
+      "cached_network_image",
+      "dio",
+      "duckduckgo_instant_answer_api",
+      "flutter",
+      "flutter_localizations",
+      "flutterscenedelegate",
+      "google_mlkit_translation",
+      "gorouter",
+      "hive",
+      "ios_runner_appdelegate_swift",
+      "ios_runner_scenedelegate_swift",
+      "ios_runnertests_runnertests_swift",
+      "logo_asset",
+      "macos_runnertests_runnertests_swift",
+      "on_device_translation",
+      "riverpod",
+      "runner_scenedelegate_scenedelegate",
+      "runnertests_runnertests_runnertests",
+      "runnertests_runnertests_runnertests_testexample",
+      "save_to_meal_categories",
+      "theme_customization",
+      "themealdb_api",
+      "tsresepy",
+      "web_recipe_search",
+      "xctestcase"
+    ],
+    "4": [
+      "home_veciata_projects_flutter_tsresepy_lib_app_dart_appshell",
+      "home_veciata_projects_flutter_tsresepy_lib_app_dart_build",
+      "home_veciata_projects_flutter_tsresepy_lib_app_dart_gorouter",
+      "home_veciata_projects_flutter_tsresepy_lib_app_dart_recipesyapp",
+      "home_veciata_projects_flutter_tsresepy_lib_app_dart_savedcategoryrecipesscreen",
+      "home_veciata_projects_flutter_tsresepy_lib_app_dart_scaffold",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_settings_settings_screen_dart_build",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_settings_settings_screen_dart_divider",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_settings_settings_screen_dart_gesturedetector",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_settings_settings_screen_dart_padding",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_settings_settings_screen_dart_scaffold",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_settings_settings_screen_dart_sectionheader",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_settings_settings_screen_dart_settingsscreen",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_settings_settings_screen_dart_sizedbox",
+      "lib_app_dart",
+      "lib_screens_settings_settings_screen_dart",
+      "providers_settings_provider_dart",
+      "screens_home_category_recipes_screen_dart",
+      "screens_home_home_screen_dart",
+      "screens_home_world_cuisines_screen_dart",
+      "screens_recipe_detail_recipe_detail_screen_dart",
+      "screens_saved_manage_categories_screen_dart",
+      "screens_saved_saved_category_recipes_screen_dart",
+      "screens_saved_saved_screen_dart",
+      "screens_search_search_screen_dart",
+      "screens_settings_settings_screen_dart"
+    ],
+    "5": [
+      "core_constants_app_constants_dart",
+      "home_veciata_projects_flutter_tsresepy_lib_services_api_service_dart_apiservice",
+      "home_veciata_projects_flutter_tsresepy_lib_services_api_service_dart_recipe",
+      "home_veciata_projects_flutter_tsresepy_lib_services_duck_duck_go_service_dart_duckduckgoservice",
+      "home_veciata_projects_flutter_tsresepy_lib_services_duck_duck_go_service_dart_striphtml",
+      "home_veciata_projects_flutter_tsresepy_lib_widgets_category_card_dart_build",
+      "home_veciata_projects_flutter_tsresepy_lib_widgets_category_card_dart_card",
+      "home_veciata_projects_flutter_tsresepy_lib_widgets_category_card_dart_categorycard",
+      "home_veciata_projects_flutter_tsresepy_lib_widgets_recipe_card_dart_build",
+      "home_veciata_projects_flutter_tsresepy_lib_widgets_recipe_card_dart_card",
+      "home_veciata_projects_flutter_tsresepy_lib_widgets_recipe_card_dart_recipecard",
+      "lib_providers_recipe_provider_dart",
+      "lib_services_api_service_dart",
+      "lib_services_duck_duck_go_service_dart",
+      "lib_widgets_category_card_dart",
+      "lib_widgets_recipe_card_dart",
+      "models_recipe_category_dart",
+      "models_recipe_dart",
+      "models_search_result_dart",
+      "package_cached_network_image_cached_network_image_dart",
+      "package_dio_dio_dart",
+      "services_api_service_dart",
+      "services_duck_duck_go_service_dart"
+    ],
+    "6": [
+      "flutter_generated_plugin_registrant_fl_register_plugins",
+      "flutter_generated_plugin_registrant_registerplugins",
+      "generated_plugin_registrant",
+      "linux_flutter_generated_plugin_registrant_cc",
+      "linux_runner_main_cc",
+      "linux_runner_my_application_cc",
+      "runner_flutter_window_flutterwindow",
+      "runner_flutter_window_messagehandler",
+      "runner_flutter_window_ondestroy",
+      "runner_main_main",
+      "runner_my_application_first_frame_cb",
+      "runner_my_application_my_application_activate",
+      "runner_my_application_my_application_class_init",
+      "runner_my_application_my_application_dispose",
+      "runner_my_application_my_application_init",
+      "runner_my_application_my_application_local_command_line",
+      "runner_my_application_my_application_new",
+      "runner_my_application_my_application_shutdown",
+      "runner_my_application_my_application_startup",
+      "windows_flutter_generated_plugin_registrant_cc",
+      "windows_runner_flutter_window_cpp",
+      "windows_runner_flutter_window_h"
+    ],
+    "7": [
+      "runner_flutter_window_oncreate",
+      "runner_win32_window_create",
+      "runner_win32_window_destroy",
+      "runner_win32_window_enablefulldpisupportifavailable",
+      "runner_win32_window_getclientarea",
+      "runner_win32_window_gethandle",
+      "runner_win32_window_getthisfromhandle",
+      "runner_win32_window_getwindowclass",
+      "runner_win32_window_messagehandler",
+      "runner_win32_window_oncreate",
+      "runner_win32_window_ondestroy",
+      "runner_win32_window_scale",
+      "runner_win32_window_setchildcontent",
+      "runner_win32_window_setquitonclose",
+      "runner_win32_window_show",
+      "runner_win32_window_unregisterwindowclass",
+      "runner_win32_window_updatetheme",
+      "runner_win32_window_win32window",
+      "runner_win32_window_windowclassregistrar",
+      "runner_win32_window_windowclassregistrar_windowclassregistrar",
+      "runner_win32_window_wndproc",
+      "windows_runner_win32_window_cpp"
+    ],
+    "8": [
+      "dart_io",
+      "home_veciata_projects_flutter_tsresepy_lib_core_localization_app_localizations_dart_applocalizations",
+      "home_veciata_projects_flutter_tsresepy_lib_core_localization_app_localizations_dart_applocalizationsdelegate",
+      "home_veciata_projects_flutter_tsresepy_lib_core_localization_app_localizations_dart_issupported",
+      "home_veciata_projects_flutter_tsresepy_lib_core_localization_app_localizations_dart_of",
+      "home_veciata_projects_flutter_tsresepy_lib_core_localization_app_localizations_dart_recipecount",
+      "home_veciata_projects_flutter_tsresepy_lib_core_localization_app_localizations_dart_shouldreload",
+      "home_veciata_projects_flutter_tsresepy_lib_core_localization_app_localizations_dart_t",
+      "home_veciata_projects_flutter_tsresepy_lib_core_localization_app_localizations_dart_translatearea",
+      "home_veciata_projects_flutter_tsresepy_lib_core_localization_app_localizations_dart_translatecategory",
+      "home_veciata_projects_flutter_tsresepy_lib_core_localization_app_localizations_dart_translatemealcategory",
+      "home_veciata_projects_flutter_tsresepy_lib_services_url_launcher_service_dart_urllauncherservice",
+      "lib_core_localization_app_localizations_dart",
+      "lib_services_url_launcher_service_dart",
+      "package_flutter_foundation_dart",
+      "package_flutter_localizations_flutter_localizations_dart",
+      "package_flutter_services_dart",
+      "string_en_dart",
+      "string_tr_dart"
+    ],
+    "9": [
+      "app_dart",
+      "home_veciata_projects_flutter_tsresepy_lib_main_dart_build",
+      "home_veciata_projects_flutter_tsresepy_lib_main_dart_circularprogressindicator",
+      "home_veciata_projects_flutter_tsresepy_lib_main_dart_initstate",
+      "home_veciata_projects_flutter_tsresepy_lib_main_dart_main",
+      "home_veciata_projects_flutter_tsresepy_lib_main_dart_materialapp",
+      "home_veciata_projects_flutter_tsresepy_lib_main_dart_recipesyinitializer",
+      "home_veciata_projects_flutter_tsresepy_lib_main_dart_recipesyinitializerstate",
+      "home_veciata_projects_flutter_tsresepy_lib_main_dart_sizedbox",
+      "home_veciata_projects_flutter_tsresepy_lib_main_dart_splashscreen",
+      "home_veciata_projects_flutter_tsresepy_lib_services_settings_service_dart_getdarkmode",
+      "home_veciata_projects_flutter_tsresepy_lib_services_settings_service_dart_getlanguagecode",
+      "home_veciata_projects_flutter_tsresepy_lib_services_settings_service_dart_getthemecolor",
+      "home_veciata_projects_flutter_tsresepy_lib_services_settings_service_dart_settingsservice",
+      "lib_main_dart",
+      "lib_services_settings_service_dart",
+      "package_hive_flutter_hive_flutter_dart",
+      "providers_local_storage_provider_dart",
+      "providers_translation_provider_dart"
+    ],
+    "10": [
+      "home_veciata_projects_flutter_tsresepy_lib_screens_recipe_detail_recipe_detail_screen_dart_build",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_recipe_detail_recipe_detail_screen_dart_buildchip",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_recipe_detail_recipe_detail_screen_dart_buildlinkbutton",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_recipe_detail_recipe_detail_screen_dart_chip",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_recipe_detail_recipe_detail_screen_dart_icon",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_recipe_detail_recipe_detail_screen_dart_padding",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_recipe_detail_recipe_detail_screen_dart_recipedetailscreen",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_recipe_detail_recipe_detail_screen_dart_recipedetailscreenstate",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_recipe_detail_recipe_detail_screen_dart_scaffold",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_recipe_detail_recipe_detail_screen_dart_singlechildscrollview",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_recipe_detail_recipe_detail_screen_dart_sizedbox",
+      "lib_providers_translation_provider_dart",
+      "lib_screens_recipe_detail_recipe_detail_screen_dart",
+      "services_translation_service_dart",
+      "services_url_launcher_service_dart"
+    ],
+    "11": [
+      "home_veciata_projects_flutter_tsresepy_lib_screens_search_search_screen_dart_build",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_search_search_screen_dart_card",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_search_search_screen_dart_center",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_search_search_screen_dart_dispose",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_search_search_screen_dart_scaffold",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_search_search_screen_dart_searchrecipecard",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_search_search_screen_dart_searchscreen",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_search_search_screen_dart_searchscreenstate",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_search_search_screen_dart_sizedbox",
+      "lib_screens_search_search_screen_dart"
+    ],
+    "12": [
+      "home_veciata_projects_flutter_tsresepy_lib_screens_home_category_recipes_screen_dart_build",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_home_category_recipes_screen_dart_categoryrecipesscreen",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_home_category_recipes_screen_dart_center",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_home_category_recipes_screen_dart_recipecard",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_home_category_recipes_screen_dart_scaffold",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_home_category_recipes_screen_dart_sizedbox",
+      "lib_screens_home_category_recipes_screen_dart",
+      "providers_recipe_provider_dart"
+    ],
+    "13": [
+      "home_veciata_projects_flutter_tsresepy_lib_screens_home_world_cuisines_screen_dart_build",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_home_world_cuisines_screen_dart_categorycard",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_home_world_cuisines_screen_dart_scaffold",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_home_world_cuisines_screen_dart_sizedbox",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_home_world_cuisines_screen_dart_worldcuisinesscreen",
+      "lib_screens_home_world_cuisines_screen_dart",
+      "package_go_router_go_router_dart",
+      "widgets_category_card_dart"
+    ],
+    "14": [
+      "core_localization_app_localizations_dart",
+      "home_veciata_projects_flutter_tsresepy_lib_widgets_saved_category_card_dart_build",
+      "home_veciata_projects_flutter_tsresepy_lib_widgets_saved_category_card_dart_card",
+      "home_veciata_projects_flutter_tsresepy_lib_widgets_saved_category_card_dart_geticon",
+      "home_veciata_projects_flutter_tsresepy_lib_widgets_saved_category_card_dart_icon",
+      "home_veciata_projects_flutter_tsresepy_lib_widgets_saved_category_card_dart_savedcategorycard",
+      "home_veciata_projects_flutter_tsresepy_lib_widgets_saved_category_card_dart_sizedbox",
+      "lib_widgets_saved_category_card_dart"
+    ],
+    "15": [
+      "home_veciata_projects_flutter_tsresepy_lib_screens_saved_saved_screen_dart_build",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_saved_saved_screen_dart_padding",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_saved_saved_screen_dart_savedscreen",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_saved_saved_screen_dart_scaffold",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_saved_saved_screen_dart_sizedbox",
+      "lib_screens_saved_saved_screen_dart",
+      "providers_saved_provider_dart",
+      "widgets_saved_category_card_dart"
+    ],
+    "16": [
+      "home_veciata_projects_flutter_tsresepy_lib_screens_home_home_screen_dart_build",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_home_home_screen_dart_buildsuggestions",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_home_home_screen_dart_homescreen",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_home_home_screen_dart_icon",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_home_home_screen_dart_padding",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_home_home_screen_dart_scaffold",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_home_home_screen_dart_sizedbox",
+      "lib_screens_home_home_screen_dart"
+    ],
+    "17": [
+      "flutterappdelegate",
+      "flutterimplicitenginedelegate",
+      "macos_runner_appdelegate_swift",
+      "runner_appdelegate_appdelegate",
+      "runner_appdelegate_appdelegate_application",
+      "runner_appdelegate_appdelegate_applicationshouldterminateafterlastwindowclosed",
+      "runner_appdelegate_appdelegate_applicationsupportssecurerestorablestate",
+      "runner_appdelegate_appdelegate_didinitializeimplicitflutterengine"
+    ],
+    "18": [
+      "home_veciata_projects_flutter_tsresepy_lib_screens_saved_saved_category_recipes_screen_dart_build",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_saved_saved_category_recipes_screen_dart_recipecard",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_saved_saved_category_recipes_screen_dart_savedcategoryrecipesscreen",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_saved_saved_category_recipes_screen_dart_scaffold",
+      "home_veciata_projects_flutter_tsresepy_lib_screens_saved_saved_category_recipes_screen_dart_sizedbox",
+      "lib_screens_saved_saved_category_recipes_screen_dart",
+      "widgets_recipe_card_dart"
+    ],
+    "19": [
+      "runner_main_wwinmain",
+      "runner_utils_createandattachconsole",
+      "runner_utils_getcommandlinearguments",
+      "runner_utils_utf8fromutf16",
+      "windows_runner_main_cpp",
+      "windows_runner_utils_cpp"
+    ],
+    "20": [
+      "flutter_generatedpluginregistrant_registergeneratedplugins",
+      "macos_flutter_generatedpluginregistrant_swift",
+      "macos_runner_mainflutterwindow_swift",
+      "nswindow",
+      "runner_mainflutterwindow_mainflutterwindow",
+      "runner_mainflutterwindow_mainflutterwindow_awakefromnib"
+    ],
+    "21": [
+      "home_veciata_projects_flutter_tsresepy_lib_core_theme_app_theme_dart_apptheme",
+      "home_veciata_projects_flutter_tsresepy_lib_core_theme_app_theme_dart_darktheme",
+      "home_veciata_projects_flutter_tsresepy_lib_core_theme_app_theme_dart_lighttheme",
+      "home_veciata_projects_flutter_tsresepy_lib_core_theme_app_theme_dart_themedata",
+      "lib_core_theme_app_theme_dart"
+    ],
+    "22": [
+      "home_veciata_projects_flutter_tsresepy_lib_models_saved_recipe_dart_savedrecipe",
+      "lib_models_saved_recipe_dart",
+      "recipe_dart",
+      "search_result_dart"
+    ],
+    "23": [
+      "home_veciata_projects_flutter_tsresepy_test_widget_test_dart_main",
+      "package_flutter_material_dart",
+      "package_flutter_test_flutter_test_dart",
+      "test_widget_test_dart"
+    ],
+    "24": [
+      "home_veciata_projects_flutter_tsresepy_lib_services_translation_service_dart_dispose",
+      "home_veciata_projects_flutter_tsresepy_lib_services_translation_service_dart_translationservice",
+      "lib_services_translation_service_dart",
+      "package_google_mlkit_translation_google_mlkit_translation_dart"
+    ],
+    "25": [
+      "ephemeral_flutter_lldb_helper_handle_new_rx_page",
+      "ephemeral_flutter_lldb_helper_lldb_init_module",
+      "ephemeral_flutter_lldb_helper_rationale_8",
+      "ios_flutter_ephemeral_flutter_lldb_helper_py"
+    ],
+    "26": [
+      "android_app_src_main_kotlin_com_example_tsresepy_mainactivity_kt",
+      "tsresepy_mainactivity_mainactivity",
+      "tsresepy_mainactivity_mainactivity_configureflutterengine"
+    ],
+    "27": [
+      "android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java",
+      "plugins_generatedpluginregistrant_generatedpluginregistrant",
+      "plugins_generatedpluginregistrant_generatedpluginregistrant_registerwith"
+    ],
+    "28": [
+      "ios_runner_generatedpluginregistrant_m",
+      "runner_generatedpluginregistrant_generatedpluginregistrant",
+      "runner_generatedpluginregistrant_generatedpluginregistrant_registerwithregistry"
+    ],
+    "29": [
+      "home_veciata_projects_flutter_tsresepy_lib_models_recipe_category_dart_recipecategory",
+      "lib_models_recipe_category_dart"
+    ],
+    "30": [
+      "home_veciata_projects_flutter_tsresepy_lib_models_recipe_dart_recipe",
+      "lib_models_recipe_dart"
+    ],
+    "31": [
+      "home_veciata_projects_flutter_tsresepy_lib_models_saved_category_dart_savedcategory",
+      "lib_models_saved_category_dart"
+    ],
+    "32": [
+      "home_veciata_projects_flutter_tsresepy_lib_models_search_result_dart_searchresult",
+      "lib_models_search_result_dart"
+    ],
+    "33": [
+      "home_veciata_projects_flutter_tsresepy_lib_core_localization_string_tr_dart_trstrings",
+      "lib_core_localization_string_tr_dart"
+    ],
+    "34": [
+      "home_veciata_projects_flutter_tsresepy_lib_core_localization_string_en_dart_enstrings",
+      "lib_core_localization_string_en_dart"
+    ],
+    "35": [
+      "home_veciata_projects_flutter_tsresepy_lib_core_constants_app_constants_dart_appcolors",
+      "lib_core_constants_app_constants_dart"
+    ],
+    "36": [
+      "windows_flutter_generated_plugin_registrant_h"
+    ],
+    "37": [
+      "windows_runner_win32_window_h"
+    ],
+    "38": [
+      "windows_runner_resource_h"
+    ],
+    "39": [
+      "windows_runner_utils_h"
+    ],
+    "40": [
+      "android_settings_gradle_kts"
+    ],
+    "41": [
+      "android_build_gradle_kts"
+    ],
+    "42": [
+      "android_app_build_gradle_kts"
+    ],
+    "43": [
+      "linux_flutter_generated_plugin_registrant_h"
+    ],
+    "44": [
+      "linux_runner_my_application_h"
+    ],
+    "45": [
+      "macos_flutter_ephemeral_packages_fluttergeneratedpluginswiftpackage_package_swift"
+    ],
+    "46": [
+      "macos_flutter_ephemeral_packages_fluttergeneratedpluginswiftpackage_sources_fluttergeneratedpluginswiftpackage_fluttergeneratedpluginswiftpackage_swift"
+    ],
+    "47": [
+      "ios_flutter_ephemeral_packages_fluttergeneratedpluginswiftpackage_package_swift"
+    ],
+    "48": [
+      "ios_flutter_ephemeral_packages_fluttergeneratedpluginswiftpackage_sources_fluttergeneratedpluginswiftpackage_fluttergeneratedpluginswiftpackage_swift"
+    ],
+    "49": [
+      "ios_runner_runner_bridging_header_h"
+    ],
+    "50": [
+      "ios_runner_generatedpluginregistrant_h"
+    ]
+  },
+  "cohesion": {
+    "0": 0.12,
+    "1": 0.05,
+    "2": 0.07,
+    "3": 0.1,
+    "4": 0.08,
+    "5": 0.09,
+    "6": 0.1,
+    "7": 0.16,
+    "8": 0.11,
+    "9": 0.11,
+    "10": 0.13,
+    "11": 0.2,
+    "12": 0.25,
+    "13": 0.25,
+    "14": 0.25,
+    "15": 0.25,
+    "16": 0.25,
+    "17": 0.25,
+    "18": 0.29,
+    "19": 0.47,
+    "20": 0.33,
+    "21": 0.4,
+    "22": 0.5,
+    "23": 0.5,
+    "24": 0.5,
+    "25": 0.5,
+    "26": 0.67,
+    "27": 0.67,
+    "28": 0.67,
+    "29": 1.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 1.0,
+    "39": 1.0,
+    "40": 1.0,
+    "41": 1.0,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0,
+    "45": 1.0,
+    "46": 1.0,
+    "47": 1.0,
+    "48": 1.0,
+    "49": 1.0,
+    "50": 1.0
+  },
+  "gods": [
+    {
+      "id": "tsresepy_app_icon",
+      "label": "TSResepy App Icon Design",
+      "degree": 33
+    },
+    {
+      "id": "package_flutter_material_dart",
+      "label": "package:flutter/material.dart",
+      "degree": 18
+    },
+    {
+      "id": "tsresepy",
+      "label": "TS Recipe",
+      "degree": 17
+    },
+    {
+      "id": "package_flutter_riverpod_flutter_riverpod_dart",
+      "label": "package:flutter_riverpod/flutter_riverpod.dart",
+      "degree": 16
+    },
+    {
+      "id": "cmake_linux_top",
+      "label": "linux/CMakeLists.txt (Top-Level)",
+      "degree": 16
+    },
+    {
+      "id": "cmake_windows_top",
+      "label": "windows/CMakeLists.txt (Top-Level)",
+      "degree": 14
+    },
+    {
+      "id": "flutter_interface_lib",
+      "label": "flutter (INTERFACE Library Target)",
+      "degree": 13
+    },
+    {
+      "id": "core_localization_app_localizations_dart",
+      "label": "../core/localization/app_localizations.dart",
+      "degree": 11
+    },
+    {
+      "id": "cmake_linux_flutter",
+      "label": "linux/flutter/CMakeLists.txt",
+      "degree": 10
+    },
+    {
+      "id": "flutter_assemble",
+      "label": "flutter_assemble (Custom Build Target)",
+      "degree": 9
+    }
+  ],
+  "surprises": [
+    {
+      "source": "TS Recipe",
+      "target": "App Logo",
+      "source_files": [
+        "README.md",
+        "assets/logo.png"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "crosses file types (doc \u2194 image); connects across different repos/directories; peripheral node `App Logo` unexpectedly reaches hub `TS Recipe`"
+    },
+    {
+      "source": "Web Favicon (PNG)",
+      "target": "TSResepy App Icon Design",
+      "source_files": [
+        "web/favicon.png",
+        "assets/logo.png"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `Web Favicon (PNG)` unexpectedly reaches hub `TSResepy App Icon Design`"
+    },
+    {
+      "source": "Web App Icon 192px",
+      "target": "TSResepy App Icon Design",
+      "source_files": [
+        "web/icons/Icon-192.png",
+        "assets/logo.png"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `Web App Icon 192px` unexpectedly reaches hub `TSResepy App Icon Design`"
+    },
+    {
+      "source": "Web App Icon 512px",
+      "target": "TSResepy App Icon Design",
+      "source_files": [
+        "web/icons/Icon-512.png",
+        "assets/logo.png"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `Web App Icon 512px` unexpectedly reaches hub `TSResepy App Icon Design`"
+    },
+    {
+      "source": "Web Maskable App Icon 192px",
+      "target": "TSResepy App Icon Design",
+      "source_files": [
+        "web/icons/Icon-maskable-192.png",
+        "assets/logo.png"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `Web Maskable App Icon 192px` unexpectedly reaches hub `TSResepy App Icon Design`"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `package:flutter/material.dart` connect `Community 23` to `Community 2`, `Community 4`, `Community 5`, `Community 8`, `Community 9`, `Community 10`, `Community 11`, `Community 12`, `Community 13`, `Community 14`, `Community 15`, `Community 16`, `Community 18`, `Community 21`?",
+      "why": "High betweenness centrality (0.105) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `package:flutter_riverpod/flutter_riverpod.dart` connect `Community 2` to `Community 4`, `Community 5`, `Community 9`, `Community 10`, `Community 11`, `Community 12`, `Community 13`, `Community 15`, `Community 16`, `Community 18`?",
+      "why": "High betweenness centrality (0.056) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `generated_plugin_registrant.cc (Plugin Registration)` connect `Community 6` to `Community 0`?",
+      "why": "High betweenness centrality (0.023) - this node is a cross-community bridge."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 32 inferred relationships involving `TSResepy App Icon Design` (e.g. with `Web Favicon (PNG)` and `Web App Icon 192px`) actually correct?",
+      "why": "`TSResepy App Icon Design` has 32 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `RecipesyApp`, `AppShell`, `GoRouter` to the rest of the system?",
+      "why": "212 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.12 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 1` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.05 - nodes in this community are weakly interconnected."
+    }
+  ]
+}
